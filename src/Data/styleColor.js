@@ -1,0 +1,20 @@
+export const styleColor = {
+  normal: { color: "var(--color-Normal-Type)" },
+  fire: { color: "var(--color-Fire-Type)" },
+  water: { color: "var(--color-Water-Type)" },
+  electric: { color: "var(--color-Electric-Tyoe)" },
+  grass: { color: "var(--color-Grass-Type)" },
+  ice: { color: "var(--color-Ice-Type)" },
+  fighting: { color: "var(--color-Fighting-Type)" },
+  poison: { color: "var(--color-Poison-Type)" },
+  ground: { color: "var(--color-Ground-Type)" },
+  flying: { color: "var(--color-Flying-Type)" },
+  psychic: { color: "var(--color-Psychic-Type)" },
+  bug: { color: "var(--color-Bug-Type)" },
+  rock: { color: "var(--color-Rock-Type)" },
+  ghost: { color: "var(--color-Ghost-Type)" },
+  dragon: { color: "var(--color-Dragon-Type)" },
+  dark: { color: "var(--color-Dark-Type)" },
+  steel: { color: "var(--color-Steel-Type)" },
+  fairy: { color: "var(--color-Fairy-Type)" }
+};
