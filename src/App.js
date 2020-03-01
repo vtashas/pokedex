@@ -11,16 +11,14 @@ const App = () => {
   const [pokemon, setPokemon] = useState([]);
 
   const fetchData = async counts => {
-    try {
-      const response = await axios.get(
-        `https://pokeapi.co/api/v2/pokemon?offset=${counts}&limit=20`
-      );
-      return pokemon.length > 0
-        ? pokemon.push(...response.data.results)
-        : await setPokemon(response.data.results);
-    } catch (error) {
-      return error;
-    }
+    const response = await axios.get(
+      `https://pokeapi.co/api/v2/pokemon?offset=${counts}&limit=20`
+    );
+    await setPokemon(prevState => {
+      return prevState.length > 0
+        ? [...prevState, ...response.data.results]
+        : [...response.data.results];
+    });
   };
 
   useEffect(() => {
