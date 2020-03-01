@@ -5,16 +5,14 @@ import Details from "./Components/Details";
 
 const Poke = () => {
   return (
-    <div>
-      <Router>
-        <Route exact path="/">
-          <App />
-        </Route>
-        <Route path="/pokemon/:pokeId">
-          <Details />
-        </Route>
-      </Router>
-    </div>
+    <Router>
+      <Route exact path="/">
+        <App />
+      </Route>
+      <Route path="/pokemon/:pokeId">
+        <Details />
+      </Route>
+    </Router>
   );
 };
 
